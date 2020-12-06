@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr"></html>
+<head>
+  <meta charset="utf-8">
+<title>
+  Compose
+</title>
+<link rel="stylesheet" href = "/css/styles.css">
+</head>
+<body>
+    <%- include('partials/header') -%>
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Title</label>
+            <input type="text" class="form-control" name = "posttitle">
+            <label for="exampleFormControlTextarea1">Post</label>
+            <textarea class="form-control" name = "postbody" rows="3" cols="30"></textarea> 
+          </div>
+          <button type="submit" class="btn btn-primary" name = "button">Publish</button>
+    </form>
+    <%- include('partials/footer') -%>
+</body>
+</html>
